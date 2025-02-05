@@ -25,6 +25,15 @@
         font-family: Figtree;
       }
 
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      a:link {
+        color: hsl(47, 88%, 63%);
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -49,7 +58,7 @@
         align-items: center;
       }
 
-      article{
+      article {
         box-sizing: border-box;
         padding: 1rem;
         background-color: hsl(0, 0%, 100%);
@@ -59,7 +68,11 @@
         box-shadow: 5px 5px 0px hsl(0, 0%, 7%);
       }
 
-      article > img{
+      article > p {
+        font-size: 16px;
+      }
+
+      article > img {
         border-radius: 1rem;
         width: 100%;
       }
@@ -72,7 +85,7 @@
         gap: 10px;
       }
 
-      .meta .category{
+      .meta .category {
         background-color: hsl(47, 88%, 63%);
         padding: 5px;
         border-radius: 5px;
@@ -80,7 +93,7 @@
         font-size: 13px;
       }
 
-      .meta .date { 
+      .meta .date {
         font-size: 13px;
       }
 
@@ -93,7 +106,6 @@
         cursor: pointer;
       }
 
-      
       article > h3:active {
         color: hsl(47, 88%, 63%);
       }
@@ -115,7 +127,6 @@
         width: 2rem;
       }
 
-      
       footer {
         padding: 15px 0px;
       }
@@ -132,15 +143,19 @@
           <span class="category">Learning</span>
           <span class="date">Published 21 Dec 2023</span>
         </div>
-        <h3>HTML & CSS foundations</h3>
+        <a href="#a">
+          <h3>HTML & CSS foundations</h3>
+        </a>
         <p>
           These languages are the backbone of every website, defining structure,
           content, and presentation.
         </p>
-        <div class="author">
-          <img alt="author avatar" src="./assets/images/image-avatar.webp" />
-          <span>Greg Hooper</span>
-        </div>
+        <a href="#s">
+          <div class="author">
+            <img alt="author avatar" src="./assets/images/image-avatar.webp" />
+            <span>Greg Hooper</span>
+          </div>
+        </a>
       </article>
     </main>
     <footer>
